@@ -42,13 +42,13 @@ cortex-m-rt = { version = "0.7", features = ["device"] }
 log = { version = "0.4", features = ["max_level_trace", "release_max_level_info"] }
 rtt-target = "0.3"
 serde = { version = "1.0", features = ["derive"], default-features = false }
+num-traits = { version = "0.2.14", features = ["libm"], default-features = false}
 serde-json-core = "0.5"
 heapless = { version = "0.7.16", features = ["serde"] }
 cortex-m-rtic = "1.0"
 embedded-hal = "0.2.7"
 num_enum = { version = "0.7.1", default-features = false }
 paste = "1"
-idsp = "0.13"
 ad9959 = { path = "ad9959", version = "0.2.1" }
 serial-settings = {path = "serial-settings"}
 mcp230xx = "1.0"
@@ -71,6 +71,7 @@ miniconf = "0.9.0"
 smoltcp-nal = { version = "0.4.1", features = ["shared-stack"]}
 bbqueue = "0.5"
 postcard = "1"
+idsp = { path = "../idsp" }
 
 [dependencies.stm32h7xx-hal]
 version = "0.15.1"
